@@ -20,7 +20,13 @@
     width: 85px;
     height: 15px;
     background-color: green;
-    /* so that that position is absolute within the grid,
-     which is relative to the browser */
     position: absolute;
+    /* So that the position is absolute within the grid,
+     which is relative to the browser 
+     */
+}
+
+
+.score {
+    font-size: 50px;
 }

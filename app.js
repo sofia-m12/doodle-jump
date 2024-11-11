@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
         while(grid.firstChild){
             grid.removeChild(grid.firstChild)
         }
-        grid.innerHTML = score //Display the score inside the grid
+        grid.innerHTML = "<span class='score'>Score: " + score + "</span>" //Display the score inside the grid
         //clear intervals so doodler doesn't move anymore
         clearInterval(downTimerId)
         clearInterval(upTimerId)
