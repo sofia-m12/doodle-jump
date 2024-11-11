@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function movePlatforms() {
         //If doodler is not at bottom(jumping), then move the platforms
-        if(doodlerBottomSpace > 200){
+        if(doodlerBottomSpace > 100){
             platforms.forEach(platform => {
                 platform.bottom -= 4
                 let visual = platform.visual
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if(doodlerBottomSpace > startPoint + 200 || doodlerBottomSpace > 515){
                 fall()
             }
-        }, 30)
+        }, 20)
     }
 
     function fall() {
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     jump()
                 }
             })
-        }, 30)
+        }, 20)
     }
 
     function gameOver() {
