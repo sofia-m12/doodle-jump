@@ -148,6 +148,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function moveLeft() {
+        if(isGoingLeft){ //Prevents multiple timers
+            return
+        }
         if(isGoingRight){
             clearInterval(rightTimerId)
             isGoingRight = false
@@ -164,6 +167,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function moveRight() {
+        if(isGoingRight){
+            return
+        }
         if(isGoingLeft){
             clearInterval(leftTimerId)
             isGoingLeft = false
